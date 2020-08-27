@@ -153,6 +153,19 @@ Header
 ===============
 */
 
+.header {
+  min-height: 100vh;
+  background: var(--clr-primary-5);
+  position: relative;
+}
+
+@media (min-width: 768px) {
+  .header {
+    min-height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.5)),
+      url("../images/bg.jpg") no-repeat center center fixed;
+  }
+}
 /*
 =============== 
 Navbar
@@ -231,6 +244,7 @@ Navbar
     left: 0;
     width: 100%;
     /* height: 100%; */
+    z-index: 3;
   }
   .nav-header {
     max-width: 1170px;
@@ -261,12 +275,219 @@ Navbar
   }
 }
 
+/* banner */
+
+.banner {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.banner-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  text-align: center;
+  margin-bottom: 6rem;
+}
+
+.banner-info h3 {
+  font-size: 4rem;
+  font-weight: 500;
+  padding: 1rem;
+  color: var(--clr-grey-3);
+  transition: var(--transition);
+}
+
+.banner-info h3 span {
+  color: var(--clr-white);
+}
+
+.banner-info h4 {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  max-width: 25rem;
+}
+
+.arrow {
+  font-size: 4rem;
+  position: absolute;
+  bottom: 6rem;
+  transition: var(--transition);
+  cursor: pointer;
+}
+.arrow:hover {
+  color: var(--clr-white);
+}
+
+.hero-btns {
+  display: none;
+  margin-top: 4rem;
+}
+
+@media (min-width: 768px) {
+  .banner-info {
+    margin-bottom: 0;
+  }
+
+  .banner-info h3 {
+    max-width: 40rem;
+    text-align: center;
+    font-weight: 600;
+    padding: 1rem;
+    color: rgb(61, 142, 218);
+    transition: var(--transition);
+    margin-bottom: 4rem;
+  }
+
+  .banner-info h4 {
+    color: rgb(221, 221, 221);
+    max-width: 35rem;
+  }
+
+  .arrow {
+    display: none;
+  }
+
+  .hero-btns {
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    bottom: 22%;
+    transition: var(--transition);
+  }
+
+  .dev-btn {
+    margin-right: 1rem;
+    padding: 1rem 2rem;
+    background: rgba(73, 155, 234, 1);
+    color: var(--clr-white);
+    text-align: center;
+    border-radius: 0.4rem;
+    transition: var(--transition);
+  }
+
+  .dev-btn:hover {
+    background: var(--clr-white);
+    color: rgba(73, 155, 234, 1);
+  }
+
+  .info-btn {
+    margin-left: 1rem;
+    padding: 1rem 2rem;
+    background: white;
+    color: var(--clr-grey-4);
+    border-radius: 0.4rem;
+    transition: var(--transition);
+  }
+
+  .info-btn:hover {
+    background: var(--clr-grey-4);
+    color: var(--clr-white);
+  }
+}
+/* end banner */
+
+/*
+=============== 
+Skills 
+===============
+*/
+.skills {
+  min-height: 100vh;
+  position: relative;
+  margin-top: 1rem;
+}
+.skills-header {
+  text-align: center;
+  margin-top: 3rem;
+}
+
+.skills-header span {
+  color: var(--clr-primary-5);
+  font-size: 2rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.skills-header h3 {
+  margin-top: 2rem;
+  margin-bottom: 6rem;
+  font-weight: 700;
+  font-size: 2.7rem;
+}
+
+.skill-center {
+  display: grid;
+  gap: 3rem 2rem;
+}
+
+.skill-card {
+  border: transparent;
+  padding: 1rem;
+  background: rgb(245, 245, 245);
+  border-radius: var(--radius);
+  box-shadow: var(--light-shadow);
+  transition: var(--transition);
+  cursor: pointer;
+  transform: translateY(0%);
+  color: var(--clr-primary-4);
+}
+
+.skill-card:hover {
+  transform: translateY(-5%);
+  box-shadow: var(--dark-shadow);
+  color: var(--clr-primary-6);
+}
+
+.skill {
+  padding: 2rem;
+  text-align: center;
+}
+.code {
+  margin-bottom: 1rem;
+}
+
+.code ion-icon {
+  font-size: 5rem;
+}
+
+.skill-title {
+  margin-top: 2rem;
+}
+
+.skill-info {
+  margin-top: 2rem;
+  text-transform: uppercase;
+}
+
+@media (min-width: 768px) {
+  .skill-center {
+    grid-template-columns: repeat(auto-fill, minmax(330px, 1fr));
+  }
+}
+
+/*
+=============== 
+Work
+===============
+*/
+
+.work {
+  margin-top: 1rem;
+}
+
+.work-center {
+  min-height: 100vh;
+}
+
 /*
 =============== 
 Global Styles
 ===============
 */
-
 /*
 =============== 
 Global Styles

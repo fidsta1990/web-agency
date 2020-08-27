@@ -12,30 +12,15 @@
 </head>
 
 <body>
-  <!DOCTYPE html>
-  <html lang="en">
-
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Navbar</title>
-    <!-- font-awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" />
-
-    <!-- styles -->
-    <link rel="stylesheet" href="./styles.css" />
-  </head>
-
-  <body>
-
-
+  <!-- header -->
+  <header class="header">
     <!-- nav bar -->
     <nav class="navbar">
 
       <!-- nav header -->
       <div class="nav-header">
         <a href="#">
-          <h1 class="logo"> webify</h1>
+          <h1 class="logo">webify</h1>
         </a>
         <button class="nav-toggle">
           <ion-icon name="arrow-forward-outline"></ion-icon>
@@ -61,17 +46,100 @@
         </li>
       </ul>
     </nav>
+    <!-- end nav bar -->
 
-    <!-- end of nav bar -->
+    <section class="banner">
+      <!-- banner-info -->
+      <article class="banner-info">
+        <h3> welcome to <span>webify</span> </h3>
+        <h4>a home of professional and skilled web developers</h4>
+        <h4>let's get connected.</h4>
+        <div class="hero-btns">
+          <a href="#" class="dev-btn">Developers</a>
+          <a href="#" class="info-btn">More Info</a>
+        </div>
+        <div class="arrow">
+          <ion-icon name="arrow-down-circle-outline"></ion-icon>
+        </div>
+      </article>
+      <!-- end banner-info -->
+    </section>
 
+  </header>
+  <!-- end header -->
+  <main>
+    <!-- skills -->
+    <section class="skills">
+      <div class="skills-header">
+        <span>here</span>
+        <h3>is how we can help you</h3>
+      </div>
+      <div class="section-center skill-center">
 
+        <!-- single skill -->
+        <a href="#" class="skill-card">
+          <article class="skill">
+            <span class="code">
+              <ion-icon name="qr-code-outline"></ion-icon>
+            </span>
+            <h4 class="skill-title">software development</h4>
+            <p class="skill-info">front end | back end</p>
+          </article>
+        </a>
+        <!-- end single skill -->
+        <!-- single skill -->
+        <a href="#" class="skill-card">
+          <article class="skill">
+            <span class="code">
+              <ion-icon name="logo-android"></ion-icon>
+              <ion-icon name="logo-apple"></ion-icon>
+            </span>
+            <h4 class="skill-title">app developers</h4>
+            <p class="skill-info">android | ios</p>
+          </article>
+        </a>
+        <!-- end single skill -->
+        <!-- single skill -->
+        <a href="#" class="skill-card">
+          <article class="skill">
+            <span class="code">
+              <ion-icon name="school-outline"></ion-icon>
+            </span>
+            <h4 class="skill-title">courses</h4>
+            <p class="skill-info">full stack | swift</p>
+          </article>
+        </a>
+        <!-- end single skill -->
+        <!-- single skill -->
+        <a href="#" class="skill-card">
+          <article class="skill">
+            <span class="code">
+              <ion-icon name="game-controller-outline"></ion-icon>
+            </span>
+            <h4 class="skill-title">game developers</h4>
+            <p class="skill-info">unity</p>
+          </article>
+        </a>
+        <!-- end single skill -->
 
-    <!-- javascript -->
-    <script src="./script/app.js"></script>
+      </div>
+    </section>
+    <!-- end skills -->
 
-  </body>
+    <!-- work -->
+    <section class="work">
+      <div class="work-header">
+        <span>here</span>
+        <h3>is how we can help you</h3>
+      </div>
+      <div class="section-center work-center">
+      </div>
+    </section>
+    <!-- end work -->
 
-  </html>
+  </main>
+  <!-- javascript -->
+  <script src="./script/app.js"></script>
 
 </body>
 
