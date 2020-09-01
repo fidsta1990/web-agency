@@ -652,11 +652,28 @@ img {
 
 /*
 =============== 
-Global Styles
+Clients
+===============
+*/
+
+.clients {
+  margin-top: 3rem;
+}
+
+.clients-center {
+  min-height: 100vh;
+  position: relative;
+  width: 100vw;
+  overflow: hidden;
+  transition: var(--transition);
+}
+/*
+=============== 
+Contact
 ===============
 */
 /*
 =============== 
-Global Styles
+Footer
 ===============
 */
