@@ -306,6 +306,10 @@ Navbar
   .nav-header .social .social-icon {
     font-size: 2rem;
     color: white;
+    transition: var(--transition);
+  }
+  .nav-header .social .social-icon:hover {
+    color: var(--clr-primary-7);
   }
 }
 
