@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Webify || Home</title>
+    <!-- ion icons -->
+    <script type="module" src="https://unpkg.com/ionicons@5.1.2/dist/ionicons/ionicons.esm.js"></script>
+    <!-- icon -->
+    <link rel="icon" href="./images/logo-web-component.svg">
+    <!-- stylesheet -->
+    <link rel="stylesheet" href="./css/main.css" />
+</head>
+
+<body>
+    <!-- header -->
+    <header class="header">
+        <!-- nav bar -->
+        <nav class="navbar">
+
+            <!-- nav header -->
+            <div class="nav-header">
+                <a href="#" class="logo-wrap">
+                    <ion-icon name="logo-web-component"></ion-icon>
+                    <h1 class="logo">webify</h1>
+                </a>
+                <button class="nav-toggle">
+                    <ion-icon name="arrow-forward-outline"></ion-icon>
+                </button>
+
+                <div class="social">
+                    <a href="#" class="social-icon">
+                        <ion-icon name="logo-instagram"></ion-icon>
+                    </a>
+                    <a href="#" class="social-icon">
+                        <ion-icon name="logo-github"></ion-icon>
+                    </a>
+                    <a href="#" class="social-icon">
+                        <ion-icon name="logo-linkedin"></ion-icon>
+                    </a>
+                </div>
+            </div>
+            <!-- nav header -->
+            <!-- links -->
+            <ul class="links">
+                <li>
+                    <a href="#">skills</a>
+                </li>
+                <li>
+                    <a href="about.html">services</a>
+                </li>
+                <li>
+                    <a href="projects.html">projects</a>
+                </li>
+                <li>
+                    <a href="contact.html">team</a>
+                </li>
+                <li>
+                    <a href="contact.html">contact</a>
+                </li>
+            </ul>
+        </nav>
+        <!-- end nav bar -->
+
+        <section class="banner">
+            <!-- banner-info -->
+            <article class="banner-info">
+                <h3> welcome to <span>webify</span> </h3>
+                <h4>a home of professional and skilled web developers</h4>
+                <h4>let's get connected.</h4>
+                <div class="hero-btns">
+                    <a href="#" class="dev-btn">Developers</a>
+                    <a href="#" class="info-btn">More Info</a>
+                </div>
+                <div class="arrow">
+                    <ion-icon name="arrow-down-circle-outline"></ion-icon>
+                </div>
+            </article>
+            <!-- end banner-info -->
+        </section>
+
+    </header>
+    <!-- end header -->
+    <main>
+        <!-- skills -->
+        <section class="skills">
+            <div class="skills-header">
+                <span class="sub-title">here</span>
+                <h3>is how we can help you</h3>
+            </div>
+            <div class="section-center skill-center">
+
+                <!-- single skill -->
+                <a href="#" class="skill-card">
+                    <article class="skill">
+                        <span class="code">
+                            <ion-icon name="qr-code-outline"></ion-icon>
+                        </span>
+                        <h4 class="skill-title">software development</h4>
+                        <p class="skill-info">front end | back end</p>
+                    </article>
+                </a>
+                <!-- end single skill -->
+                <!-- single skill -->
+                <a href="#" class="skill-card">
+                    <article class="skill">
+                        <span class="code">
+                            <ion-icon name="logo-android"></ion-icon>
+                            <ion-icon name="logo-apple"></ion-icon>
+                        </span>
+                        <h4 class="skill-title">app developers</h4>
+                        <p class="skill-info">android | ios</p>
+                    </article>
+                </a>
+                <!-- end single skill -->
+                <!-- single skill -->
+                <a href="#" class="skill-card">
+                    <article class="skill">
+                        <span class="code">
+                            <ion-icon name="school-outline"></ion-icon>
+                        </span>
+                        <h4 class="skill-title">courses</h4>
+                        <p class="skill-info">full stack | swift</p>
+                    </article>
+                </a>
+                <!-- end single skill -->
+                <!-- single skill -->
+                <a href="#" class="skill-card">
+                    <article class="skill">
+                        <span class="code">
+                            <ion-icon name="game-controller-outline"></ion-icon>
+                        </span>
+                        <h4 class="skill-title">game developers</h4>
+                        <p class="skill-info">unity</p>
+                    </article>
+                </a>
+                <!-- end single skill -->
+
+            </div>
+        </section>
+        <!-- end skills -->
+    </main>
+
+    <!-- work -->
+    <section class="work">
+        <div class="work-header">
+            <h3 class="sub-title">our work</h3>
+        </div>
+        <div class="section-center work-center">
+
+            <div class="slideshow-container">
+
+                <div class="mySlides fade">
+                    <img src="https://static.dribbble.com/users/25514/screenshots/9834148/media/381e301ad320234a784de49a1485d8b6.png"
+                        style="width:100%">
+                    <div class="text">CybSec</div>
+                </div>
+
+                <div class="mySlides fade">
+                    <img src="https://static.dribbble.com/users/13307/screenshots/10175899/media/ac2ebf1e5e095c778f3a78473e121e4e.jpg"
+                        style="width:100%">
+                    <div class="text">Ginseo BlockChain</div>
+                </div>
+
+                <div class="mySlides fade">
+                    <img src="https://static.dribbble.com/users/124454/screenshots/10001950/media/72470f9043af91f28b1d03308cec75dc.png"
+                        style="width:100%">
+                    <div class="text">Wibbitz</div>
+                </div>
+
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+            </div>
+            <br>
+
+            <div class="slide-btns" style="text-align:center">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+            </div>
+        </div>
+    </section>
+    <!-- end work -->
+
+    <!-- clients -->
+    <section class="clients">
+        <div class="client-header">
+            <span class="sub-title">our clients</span>
+        </div>
+        <div class="section-center clients-center">
+            <!-- single client -->
+            <div class="client-card">
+                <img src="./icons/atom-5.svg" alt="atom logo">
+            </div>
+            <!-- end single client -->
+            <!-- single client -->
+            <div class="client-card">
+                <img src="./icons/cosmopolitan-magazine-logo.svg" alt="cosmopolitan logo">
+            </div>
+            <!-- end single client -->
+            <!-- single client -->
+            <div class="client-card">
+                <img src="./icons/costa-2.svg" alt="costa logo">
+            </div>
+            <!-- end single client -->
+            <!-- single client -->
+            <div class="client-card">
+                <img src="./icons/kraken-2.svg" alt="kraken logo">
+            </div>
+            <!-- end single client -->
+            <!-- single client -->
+            <div class="client-card">
+                <img src="./icons/san-pellegrino-mineralwasser-logo.svg" alt="sna pellegrino logo">
+            </div>
+            <!-- end single client -->
+            <!-- single client -->
+            <div class="client-card">
+                <img src="./icons/verizon-2015-logo-vector-1.svg" alt="verizon logo">
+            </div>
+            <!-- end single client -->
+        </div>
+    </section>
+    <!-- end of clients -->
+
+    <!-- contact -->
+    <section class="contact">
+        <h2>Interested in working with us, <a href="#"><span>Say Hi</span></a></h2>
+        <span class="message-hi">Hi <br>Webify</span>
+    </section>
+    <!-- end of contact -->
+
+
+    <!-- footer -->
+    <footer class="footer">
+        <p>&copy;<span class="date"></span> created by webify ltd. all rights reserved</p>
+    </footer>
+    <!-- end footer -->
+
+    <!-- javascript -->
+    <script src="./script/date.js"></script>
+    <script type="text/javascript" src="./script/app.js"></script>
+    <script type="text/javascript" src="./script/slider.js"></script>
+
+</body>
+
+</html>
