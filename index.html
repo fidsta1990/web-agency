@@ -4,9 +4,11 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Web Agency Project</title>
+  <title>Webify || Home</title>
   <!-- ion icons -->
   <script type="module" src="https://unpkg.com/ionicons@5.1.2/dist/ionicons/ionicons.esm.js"></script>
+  <!-- icon -->
+  <link rel="icon" href="./images/logo-web-component.svg">
   <!-- stylesheet -->
   <link rel="stylesheet" href="./css/main.css" />
 </head>
@@ -19,7 +21,8 @@
 
       <!-- nav header -->
       <div class="nav-header">
-        <a href="#">
+        <a href="#" class="logo-wrap">
+          <ion-icon name="logo-web-component"></ion-icon>
           <h1 class="logo">webify</h1>
         </a>
         <button class="nav-toggle">
@@ -71,7 +74,7 @@
     <!-- skills -->
     <section class="skills">
       <div class="skills-header">
-        <span>here</span>
+        <span class="sub-title">here</span>
         <h3>is how we can help you</h3>
       </div>
       <div class="section-center skill-center">
@@ -125,21 +128,57 @@
       </div>
     </section>
     <!-- end skills -->
-
-    <!-- work -->
-    <section class="work">
-      <div class="work-header">
-        <span>here</span>
-        <h3>is how we can help you</h3>
-      </div>
-      <div class="section-center work-center">
-      </div>
-    </section>
-    <!-- end work -->
-
   </main>
+
+  <!-- work -->
+  <section class="work">
+    <div class="work-header">
+      <h3 class="sub-title">our work</h3>
+    </div>
+    <div class="section-center work-center">
+
+      <div class="slideshow-container">
+
+        <div class="mySlides fade">
+          <img
+            src="https://static.dribbble.com/users/25514/screenshots/9834148/media/381e301ad320234a784de49a1485d8b6.png"
+            style="width:100%">
+          <div class="text">CybSec</div>
+        </div>
+
+        <div class="mySlides fade">
+          <img
+            src="https://static.dribbble.com/users/13307/screenshots/10175899/media/ac2ebf1e5e095c778f3a78473e121e4e.jpg"
+            style="width:100%">
+          <div class="text">Ginseo BlockChain</div>
+        </div>
+
+        <div class="mySlides fade">
+          <img
+            src="https://static.dribbble.com/users/124454/screenshots/10001950/media/72470f9043af91f28b1d03308cec75dc.png"
+            style="width:100%">
+          <div class="text">Wibbitz</div>
+        </div>
+
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+      </div>
+      <br>
+
+      <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+      </div>
+    </div>
+  </section>
+  <!-- end work -->
+
+
   <!-- javascript -->
-  <script src="./script/app.js"></script>
+  <script type="text/javascript" src="./script/app.js"></script>
+  <script type="text/javascript" src="./script/slider.js"></script>
 
 </body>
 

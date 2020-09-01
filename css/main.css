@@ -145,6 +145,13 @@ main {
   place-items: center;
 }
 
+.sub-title {
+  color: var(--clr-primary-5);
+  font-size: 2rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
 /* YOUR CODE GOES HERE */
 
 /*
@@ -206,6 +213,18 @@ Navbar
 .nav-toggle {
   color: white;
   transition: var(--transition);
+}
+
+.logo-wrap {
+  display: flex;
+}
+
+.logo-wrap ion-icon {
+  font-size: 3rem;
+  display: flex;
+  align-items: center;
+  color: var(--clr-white);
+  margin-right: 0.5rem;
 }
 
 .logo {
@@ -445,6 +464,7 @@ Skills
 .skill {
   padding: 2rem;
   text-align: center;
+  letter-spacing: var(--spacing);
 }
 .code {
   margin-bottom: 1rem;
@@ -476,12 +496,155 @@ Work
 */
 
 .work {
-  margin-top: 1rem;
+  margin-top: 7rem;
+  background: var(--clr-grey-3);
+}
+.work-header {
+  text-align: center;
+  margin-top: 2rem;
 }
 
-.work-center {
-  min-height: 100vh;
+.work-header .sub-title {
+  padding-top: 3.5rem;
 }
+
+.work-header h3 {
+  margin-top: 5rem;
+  margin-bottom: 3rem;
+}
+.work-center {
+  min-height: 50vh;
+  position: relative;
+  width: 100vw;
+  overflow: hidden;
+  transition: var(--transition);
+}
+
+/* slider */
+.mySlides {
+  display: none;
+}
+img {
+  vertical-align: middle;
+  border-radius: 2rem;
+  box-shadow: var(--dark-shadow);
+}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 900px;
+  position: relative;
+  margin: auto;
+  border-radius: 2rem;
+  box-shadow: var(--dark-shadow);
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: var(--clr-primary-3);
+  background: rgba(245, 245, 245, 0.815);
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: var(--clr-primary-3);
+  color: var(--clr-white);
+}
+
+/* Caption text */
+.text {
+  color: var(--clr-primary-4);
+  font-weight: bolder;
+  font-size: 2rem;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: var(--clr-primary-3);
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #fdfdfd;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+  background-color: var(--clr-primary-3);
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev,
+  .next,
+  .text {
+    font-size: 11px;
+  }
+}
+/* end slider */
+
+/* end slider */
 
 /*
 =============== 
